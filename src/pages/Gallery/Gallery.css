@@ -1,0 +1,64 @@
+.gallery-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .gallery-header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    height: 80px;
+  }
+  .logo-image {
+    height: 110px;
+    width: 110px;
+    display: flex;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust size as needed */
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .image-item {
+    background-color: #eee; 
+    height: 300px; 
+   
+  }
+  
+  
+  
+  .call-to-action {
+    margin: 20px 0;
+  }
+  
+  .call-to-action p {
+    margin-bottom: 10px;
+  }
+  
+  .call-to-action button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #0b0b0b; /* Adjust the color to match your theme */
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .image-item {
+    position: relative;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* To ensure there's no extra space under the image */
+  }
