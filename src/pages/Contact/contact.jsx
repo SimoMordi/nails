@@ -33,6 +33,21 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        {/*contact form component
+          form 
+          first name  - last name
+          email
+          message
+          state, handlesubmit function, handlechange function
+          submit
+          make sure input is require
+          be able to log the input in the console
+
+          <ContactForm />
+           */}
+        <form action="">
+
+        </form>
         <div className="contact-form">
           <div className="name-fields">
             <input type="text" placeholder="First Name" />
