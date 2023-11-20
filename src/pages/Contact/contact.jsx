@@ -2,8 +2,25 @@
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import './contact.css';
+import { useState } from 'react';
 
 const Contact = () => {
+
+  const [contactFormData, setContactFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    message:'',
+  })
+
+  const handleChange = (e) =>{
+    const {name , value } = e.target;
+    setContactFormData((prevState)=>({
+      ...prevState,
+      [name]: value,
+    }))
+  }
+
   return (
     <div className="contact-container">
       <h1 className="navbar">Navbar</h1>
@@ -50,11 +67,30 @@ const Contact = () => {
         </form>
         <div className="contact-form">
           <div className="name-fields">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            {/* Name Inputs */}
+            <input 
+            value={contactFormData.firstName}
+            name='firstName'
+            onChange={handleChange}
+            type="text" placeholder="First Name" />
+            <input 
+            value={contactFormData.lastName}
+            name='lastName'
+            onChange={handleChange}
+            type="text" placeholder="Last Name" />
           </div>
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+          {/* Email */}
+          <input 
+          value={contactFormData.email}
+          name='email'
+          onChange={handleChange}
+          type="email" placeholder="Email" />
+          {/* Message */}
+          <textarea 
+          value={contactFormData.message}
+          name='message'
+          onChange={handleChange}
+          placeholder="Message"></textarea>
           <button type="submit">Send</button>
         </div>
       </div>
