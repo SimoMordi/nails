@@ -1,0 +1,105 @@
+.about-page-container {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Hero section styles */
+.hero-section {
+  position: relative;
+  text-align: center;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 400px;
+  max-width: 1400px; /* Set the max-width for the hero image */
+  margin: 0 auto; /* Center the image if it's smaller than the container */
+}
+
+/* "Who we are" section styles */
+.who-we-are-section {
+  padding: 32px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+/* "Our Process" section styles */
+.process-section {
+  padding: 32px;
+  background-color: #fff;
+}
+
+/* List items for the process */
+.process-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.process-section li {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.process-section li:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+/* "Unleash Your Style" section styles */
+.uniqueness-section {
+  padding: 32px;
+  background-color: #e5e5e5;
+  text-align: center;
+}
+
+/* "Our Team" section styles */
+.team-section {
+  padding: 32px;
+  background-color: #fff;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 16px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 80px; /* Previously was set to rem */
+  height: 80px; /* Keep as is for a square aspect ratio */
+  border-radius: 50%;
+}
+
+/* "Client Stories" section styles */
+.client-stories-section {
+  padding: 32px;
+  background-color: #f0f0f0;
+}
+
+.client-story {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Footer styles */
+.contact-footer {
+  padding: 32px;
+  background-color: #333;
+  color: #fff;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+/* Contact details */
+.contact-info div {
+  margin-bottom: 8px;
+}
