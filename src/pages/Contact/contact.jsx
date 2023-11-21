@@ -3,6 +3,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import './contact.css';
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
 
@@ -13,6 +15,35 @@ const Contact = () => {
     message:'',
   })
 
+  const templateParams = {
+    to_name: 'Sammi Nails', // Replace with the recipient's name or use formData.name
+    from_name: contactFormData.name,
+    message: contactFormData.message,
+    from_email: contactFormData.email,
+};
+
+const sendEmail = (e) => {
+  e.preventDefault();
+  emailjs
+      .send('service_2vc6v1d', 'template_zb0nf6o', templateParams, 'i_ylqs_VpN1QO5XSr')
+    .then(
+      (result) => {
+        console.log(result.text);
+        // Handle success
+      },
+      (error) => {
+        console.log(error.text);
+        // Handle error
+      }
+    );
+    setContactFormData({ 
+      firstName: '',
+    lastName: '',
+    email: '',
+    message:'',
+  })
+};
+
   const handleChange = (e) =>{
     const {name , value } = e.target;
     setContactFormData((prevState)=>({
@@ -21,7 +52,9 @@ const Contact = () => {
     }))
   }
 
-  return (
+
+  
+return (
     <div className="contact-container">
       <h1 className="navbar">Navbar</h1>
       <div className="contact-content">
@@ -91,7 +124,7 @@ const Contact = () => {
           name='message'
           onChange={handleChange}
           placeholder="Message"></textarea>
-          <button type="submit">Send</button>
+          <button onClick={(e)=>sendEmail(e)}type="submit">Send</button>
         </div>
       </div>
       <h1 className="footer">Footer</h1>
