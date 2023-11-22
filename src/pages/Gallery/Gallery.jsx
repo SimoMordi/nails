@@ -205,10 +205,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container">
-      <header className="gallery-header">
-        <img src={SammiNailsLogo} alt="Sammi Nails Spa" className="logo-image" />
-        <h1>Navbar</h1>
-      </header>
+      
       <h1>Check our recent work:</h1>
       <p>Heart and save to show your nail artist next time!</p>
       <div className="image-grid">
@@ -223,7 +220,7 @@ const Gallery = () => {
         <button>Book</button>
         <button>Learn More</button>
       </div>
-      <h1 className="footer">Footer</h1>
+      
     </div>
   );
 };

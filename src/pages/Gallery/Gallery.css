@@ -28,7 +28,6 @@
   }
   
   
-  
   .call-to-action {
     margin: 20px 0;
   }
@@ -46,12 +45,7 @@
     cursor: pointer;
   }
   
-  .footer {
-    background-color: #0b0b0b; /* Adjust the color to match your theme */
-    color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-  }
+
   .image-item {
     position: relative;
   }

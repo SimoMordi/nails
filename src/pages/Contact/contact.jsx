@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <h1 className="navbar">Navbar</h1>
+      
       <div className="contact-content">
         <div className="contact-info">
           <h2>Contact Us!</h2>
@@ -22,7 +22,8 @@ const Contact = () => {
               <div className="text">
                 <p>Email</p>
                 <p>Send us an email today!</p>
-                <p>sammnails@example.com</p>
+                <p>samminails@example.com</p>
+                <p>Email: <a href="mailto:samminails@example.com">samminails@example.com</a></p>
               </div>
             </div>
             <div className="detail">
@@ -32,13 +33,14 @@ const Contact = () => {
                 <p>Phone</p>
                 <p>Call us for an appointment.</p>
                 <p>(425) 379-6178</p>
+                <p>Phone: <a href="tel:425-379-6178">425-379-6178</a></p>
               </div>
             </div>
           </div>
         </div>
         <ContactForm />
       </div>
-      <h1 className="footer">Footer</h1>
+      
     </div>
   );
 };

@@ -6,19 +6,7 @@ import './About.css';
 const About = () => {
   return (
     <div className="about-page-container">
-      <header className="gallery-header">
-        <img src={SammiNailsLogo} alt="Sammi Nails Spa Logo" className="logo-image" />
-        {/* You can replace <h1>Navbar</h1> with an actual navigation bar component */}
-        <nav>
-          <ul className="navigation-menu">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
-
+  
       <main>
         <section className="hero-section">
           <img src={tropicalTouch} alt="Unleash your power with nails" className="hero-image" />

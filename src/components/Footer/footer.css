@@ -1,0 +1,83 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 100%;
+    /* margin: 0 75px; */
+    height: 200px;
+    background: #424348
+}
+.logo {
+    width: 125px;
+}
+.footerContainer {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+.hours {
+    list-style-type: none;
+    width: 300px px;
+    text-align: center;
+    margin-left: 50px;
+}
+.singleHours {
+    margin-top: 5px;
+    line-height: 150%;
+    color: rgba(255, 211, 129, 0.98);
+}
+.footerIconsContainer {
+    display: flex;
+    gap: 10px;
+}
+.footerIcons {
+    color: black;
+}
+#footer p {
+    color: rgba(255, 211, 129, 0.98);
+}
+
+
+@media only screen and (max-width: 768px) {
+    #navbar, #footer {
+      /* Adjust navbar and footer styles for mobile */
+      height: 60px;  /* Example: You might want to reduce the height */
+    }
+  
+    .contact-form {
+      /* Adjust form styles for smaller screens */
+      margin-top: 20px;  /* Example: Reduce the top margin */
+      width: 90%;       /* Example: Adjust the width for smaller screens */
+    }
+  
+    .contact-content {
+      /* Adjust the layout to stack elements vertically */
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;  /* Example: Adjust padding for smaller screens */
+    }
+  
+    .contact-info, .contact-form {
+      /* Ensure that both the info and form take full width */
+      width: 100%;
+    }
+  
+    .contact-info .contact-details {
+      /* Adjust contact details layout if necessary */
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .contact-form .name-fields {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .contact-form .name-fields input {
+      width: 100%;  /* Make sure input fields take full width */
+    }
+  }
+  
