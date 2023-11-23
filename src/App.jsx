@@ -15,11 +15,11 @@ function App() {
     <Navbar />
       {/* <Contact/>  */}
 
-      {/* <Gallery /> */}
+      <Gallery />
 
       {/* <About/> */}
     <br />
-    {/* <Footer /> */}
+    <Footer />
 
         {/* <Routes>
             <Route path='/' element={<Home/>}/>
