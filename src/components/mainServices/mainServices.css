@@ -1,0 +1,104 @@
+/* General reset for body to remove default margins and set the font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Container for the entire services section */
+  .services-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .services-header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  /* Grid layout for services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+  }
+  
+  /* Individual service category container */
+  .service-category {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Titles for each service category */
+  .service-category h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* List of services */
+  .service-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Individual service item */
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Service name */
+  .service-name {
+    font-size: 16px;
+  }
+  
+  /* Service price */
+  .service-price {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* For smaller screens, adjust to a single column */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Single column */
+    }
+  }
+  
+  /* Styles for popular options and deals */
+  .deals-container {
+    margin-bottom: 20px;
+  }
+  
+  .deal {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .deal:last-child {
+    border-bottom: none;
+  }
+  
+  /* Add more styles here as needed to match the specific elements in your screenshot */
+  
+  /* Ensure footer and header match the rest of the layout */
+  header, footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* You can add more specific styles like colors, fonts, etc. as per the screenshot */
+  
