@@ -1,0 +1,26 @@
+.popular-options {
+  padding: 20px;
+  text-align: center;
+}
+
+.most-requested, .combination-deals {
+  margin-bottom: 20px;
+  
+}
+
+.service-item, .deal-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px; /* Space between items */
+}
+
+.most-and-deals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} 
+
+@media (max-width: 760px) {
+  .most-and-deals {
+    grid-template-columns: 1fr;
+  }
+}

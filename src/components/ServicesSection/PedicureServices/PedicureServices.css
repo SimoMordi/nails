@@ -1,0 +1,28 @@
+.pedicure-services-section {
+  padding: 20px;
+  text-align: center; 
+  
+}
+
+.PediServices-and-prices{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.service-category {
+  margin-bottom: 20px;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+

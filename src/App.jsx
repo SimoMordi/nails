@@ -1,30 +1,25 @@
 
-import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Contact from './pages/Contact/contact'
 import Gallery from './pages/Gallery/Gallery'
-import About from './pages/About/About'
-import Footer from './components/Footer/footer'
-import Navbar from './components/Navbar/Navbar'
-import ServicesSection from './components/mainServices/mainServices'
+
+import ContactInfo from './components/ContactInfo/contactInfo'
+import Services from './pages/Services/Services'
+
 
 function App() {
 
   return (
     <div>
-
-      {/* <Navbar /> */}
       {/* <Contact/>  */}
-     <ServicesSection />
+      <Services />
       {/* <Gallery /> */}
 
-      {/* <About/> */}
+      
+      {/* <ContactInfo /> */}
   
-      {/* <Footer /> */}
+     
 
-        {/* <Routes>
-            <Route path='/' element={<Home/>}/>
-        </Routes> */}
     </div>
   )
 }

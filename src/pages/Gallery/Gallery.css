@@ -17,15 +17,17 @@
   .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjust size as needed */
-    gap: 10px;
-    padding: 20px;
+    gap: 25px;
+    padding: 28px;
   }
   
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 760px) {
     .image-grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
     }
   }
+   
+
   .image-item {
     background-color: #eee; 
     height: 300px; 
