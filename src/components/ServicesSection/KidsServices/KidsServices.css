@@ -27,6 +27,10 @@
   border-radius: 8px;
 }
 
+.waxing{
+  margin-bottom: 20px;
+}
+
 @media (max-width: 760px) {
   .kids-and-Image {
     grid-template-columns: 1fr;

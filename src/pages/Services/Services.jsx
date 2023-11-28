@@ -12,19 +12,32 @@ import hero2 from '../../Assets/Images/img6.png'
 const Services = () => {
   return (
     <>
-      <img src={hero} alt="heroImage" className='heroImage' />
       <div className="services-section">
+      <div className='heroImage' />
+      <div className="hero-text">
+        <h4>Polish to perfection, from tips to toes</h4>
+        </div>
+      
         <PopularOptions />
 
-        <div className='mani-and-pedi'>
+        <div className='mani-and-pedi margin'>
         <ManicureServices />
         <PedicureServices />
         </div>
-        <div className='call-to-action-item'>
-        <img src={hero2} alt="heroImage2" className='heroImage2' />
+        {/* <div className='call-to-action-item'>
+          <div className='inside-call-to-action'>
+            <span className='white-box'>
+              <p>“Sammi Nails Spa is the best salon around, I wouldnt go anywhere else”</p>
+              <p>Sonita</p>
+              </span>
+            
+          <img src={hero2} alt="heroImage2" className='heroImage2' />
+          </div>
+        </div> */}
+        <div className="kids-and-waxing-section margin">
+          <KidsServices />
+          <WaxingServices />
         </div>
-        <KidsServices />
-        <WaxingServices />
 
       </div>
 

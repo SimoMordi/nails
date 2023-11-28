@@ -8,19 +8,22 @@ const KidsServices = () => {
     { name: "Classic Manicure with Gel Polish", price: "$25" },
     { name: "Classic Pedicure", price: "$25" },
     { name: "Classic Pedicure with Gel Polish", price: "$35" },
-    { name: "Color Change nails/toes", price: "$15" },
-    { name: "Gel Polish Color Change nails/toes", price: "$30" }
+    { name: "Color Change Nails/Toes", price: "$15" },
+    { name: "Gel Polish Color Change Nails/Toes", price: "$30" }
   ];
 
   return (
-    <div className="kids-services-container">
+    <section className="kids-services-container">
+      <div className="popular">
+
       <h2>Kids Services</h2>
+      </div>
 
       <div className='kids-and-Image'>
-        <ul className="kids-services-list">
+        <ul className="most-requested">
           {kidsServices.map((service, index) => (
             <li key={index} className="kids-service-item">
-              <span className="service-name">{service.name}</span>
+              <p>{service.name}</p>
               <span className="service-price">{service.price}</span>
             </li>
           ))}
@@ -28,7 +31,7 @@ const KidsServices = () => {
         <img src={kids} alt="kidsImage" className='kidsImage' />
       </div>
 
-    </div>
+    </section>
   );
 };
 

@@ -24,15 +24,15 @@ const WaxingServices = () => {
       <h2 className='waxing'>Waxing</h2>
 
       <div className='waxing-and-Image'>
-        <img src={wax} alt="waxImage" className='waxImage' />
-        <div className="waxing-services-list">
+      <img src={wax} alt="waxImage" className='waxImage' />
+        <ul className="most-requested">
           {waxingServices.map((service, index) => (
-            <div key={index} className="waxing-service-item">
+            <li key={index} className="kids-service-item">
               <span className="service-name">{service.name}</span>
               <span className="service-price">{service.price}</span>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
 
       </div>
     </div>

@@ -16,25 +16,25 @@ const combinationDeals = [
 
 const PopularOptions = () => {
   return (
-    <section className="popular-options">
+    <section className="popular-options margin">
       <h2 className='Popular'>Popular Options</h2>
       <div className='most-and-deals'>
         <div className="most-requested">
-          <h3>Most Requested</h3>
+          <h4>Most Requested</h4>
           <ul>
             {mostRequestedServices.map((service, index) => (
               <li key={index} className="service-item">
-                {service.name} <span className="service-price">{service.price}</span>
+               <p>{service.name}</p>  <span className="service-price">{service.price}</span>
               </li>
             ))}
           </ul>
         </div>
-        <div className="combination-deals">
-          <h3>Combination Deals</h3>
+        <div className="most-requested">
+          <h4>Combination Deals</h4>
           <ul>
             {combinationDeals.map((deal, index) => (
-              <li key={index} className="deal-item">
-                {deal.name} <span className="deal-price">{deal.price}</span>
+              <li key={index} className="service-item">
+               <p>{deal.name}</p>  <span className="service-price">{deal.price}</span>
               </li>
             ))}
           </ul>

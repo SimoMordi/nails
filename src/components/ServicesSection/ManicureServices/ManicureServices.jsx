@@ -31,8 +31,20 @@ const manicureServicesData = [
       { name: "Gel French Polish", price: "$30" },
       { name: "Cat eye or chrome Nails", price: "$15" },
       { name: "Nail Design", price: "$10+" },
-      { name: "Take off with services", details: "Gel $3, Dip $5, Acrylic $10" },
-      { name: "Take off without services", details: "Gel $8, Dip $10, Acrylic $15" },
+      { name: "Take off with services", 
+      details:{ 
+        // "Gel $3, Dip $5, Acrylic $10"
+        gel: '$3 Gel',
+        dip: '$5 Dip',
+        acrylic: '$10 Acrylic',
+      } },
+      { name: "Take off without services", 
+      details:{ 
+        // "Gel $3, Dip $5, Acrylic $10"
+        gel: '$3 Gel',
+        dip: '$5 Dip',
+        acrylic: '$10 Acrylic',
+      } },,
     ]
   }
 ];
@@ -41,22 +53,27 @@ const ManicureServices = () => {
   return (
     <section className="manicure-services-section">
 
-      <div className='maniServices-and-prices'>
+      <div className='popular'>
         <h2>Manicures</h2>
 
         <div className="services-description">
-          All our manicure services include meticulous trimming, regular shaping, precise filing, expert buffing, and thorough cuticle maintenance. The experience concludes with a soothing lotion massage and the application of your chosen regular polish.
+          <p>All our manicure services include meticulous trimming, regular shaping, precise filing, expert buffing, and thorough cuticle maintenance. The experience concludes with a soothing lotion massage and the application of your chosen regular polish.</p>
         </div>
 
         <ul>
           {manicureServicesData.map((category, index) => (
-            <section key={index} className="service-category">
+            <section key={index} className="most-requested">
               <h3>{category.category}</h3>
               <ul className="services-list">
                 {category.services.map((service, serviceIndex) => (
                   <li key={serviceIndex} className="service-item">
-                    {service.name} <span className="service-price">{service.price}</span>
-                    {service.details && <span className="service-details">({service.details})</span>}
+                    <p>{service.name}</p> <span className="service-price">{service.price}</span>
+                    {service.details && <div className="service-details">
+                     <span >{service.details.gel}</span>
+                    <span>{service.details.acrylic}</span>
+                    <span>{service.details.dip}</span>
+                   </div> } 
+                    
                   </li>
                 ))}
               </ul>

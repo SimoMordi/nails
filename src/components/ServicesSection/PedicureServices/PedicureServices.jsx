@@ -47,31 +47,32 @@ import './PedicureServices.css';
   
   return (
     <section className="pedicure-services-section">
-      <div className='PediServices-and-prices'>
-      <h2>Pedicures</h2>
-      <div className="services-description">
-        All our pedicure services offer a comprehensive experience, including a warm foot bath, trimming, shaping, filing, buffing, cuticle maintenance, callus treatment, a luxurious sugar scrub, mask and massage, and concluding with a hot towel and your choice of regular polish.
-      </div>
-      <ul className="services-list">
-      {services.map((serviceCategory, index) => (
-        <section key={index}>
-          <h3>{serviceCategory.category}</h3>
-          <p>{serviceCategory.description}</p>
-          <ul className='services-list'>
-            {serviceCategory.items.map((item, index) => (
-              <li key={index} className="service-item">
-                <span className="service-name">{item.name}</span>
-                <span className="service-price">{item.price}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-      </ul>
-
+      <div className='popular'>
+        <h2>Pedicures</h2>
+        <div className="services-description">
+          All our pedicure services offer a comprehensive experience, including a warm foot bath, trimming, shaping, filing, buffing, cuticle maintenance, callus treatment, a luxurious sugar scrub, mask and massage, and concluding with a hot towel and your choice of regular polish.
+        </div>
+        <ul className="services-list">
+          {services.map((serviceCategory, index) => {
+           return <section className='most-requested' key={index}>
+              <h3>{serviceCategory.category}</h3>
+              <p className='services-description'>{serviceCategory.description}</p>
+              <ul className='services-list'>
+                {serviceCategory.items.map((item, index) => (
+                  <li key={index} className="service-item">
+                    <p>{item.name}</p>
+                    <span className="service-price">{item.price}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          }
+          )}
+        </ul>
       </div>
     </section>
   );
+  
 };
 
 export default PedicureServices
