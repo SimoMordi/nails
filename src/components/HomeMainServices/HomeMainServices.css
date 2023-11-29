@@ -1,0 +1,151 @@
+.main-services{
+  grid-row: 5;
+  display: grid;
+    gap:0 133px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+    height: 1800px;
+    width: 90%;
+  }
+
+  .main-services .Pedicure{
+    grid-row: 1;
+    grid-column: 2/2;
+  }
+
+  .main-services .Pedicure-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .main-services .Pedicure-container h2{
+    color: #000;
+    text-align: center;
+    /* Heading/H2 */
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+  }
+
+  .main-services .Pedicure-container p{
+    width: 556px;
+    height: 300px;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+
+
+  .main-services .Pedicure-image{
+    width: 557px;
+    height: 500px;
+  }
+
+  .main-services .Manicure{
+    grid-row: 2;
+    grid-column: 1/2;
+   }
+
+  .main-services .Manicure-container{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   } 
+
+
+  .main-services .Manicure-container h2{
+    color: #000;
+    text-align: center;
+    /* Heading/H2 */
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+  }
+
+  .main-services .Manicure-container p{
+    width: 556px;
+    height: 300px;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+
+  .main-services .Manicure-image{
+    grid-row: 2;
+    grid-column: 2/2;
+    width: 557px;
+    height: 500px;
+  }
+
+  .main-services .Waxing{
+    grid-row: 3;
+    grid-column: 2/2;
+  }
+
+  .main-services .Waxing-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    grid-row: 3;
+    grid-column: 2/2;
+  }
+
+  .main-services .Waxing-container h2{
+    color: #000;
+    text-align: center;
+    /* Heading/H2 */
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 57.6px */
+  }
+
+  .main-services .Waxing-container p{
+    width: 556px;
+    height: 300px;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+  }
+
+  .main-services .Waxing-image{
+    grid-row: 3;
+    grid-column: 1/2;
+    width: 557px;
+    height: 500px;
+  }
+
+  .services-button{
+    margin: auto;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #000;
+    background-color: transparent;
+  }
