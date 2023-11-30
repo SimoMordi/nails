@@ -5,7 +5,6 @@ import Gallery from './pages/Gallery/Gallery'
 
 import ContactInfo from './components/ContactInfo/contactInfo'
 import Services from './pages/Services/Services'
-import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 
 
@@ -13,12 +12,12 @@ function App() {
 
   return (
     <div>
+      <Navbar />
       {/* <Home/> */}
       {/* <Contact/>  */}
-      {/* <Services /> */}
+      <Services />
       {/* <Gallery /> */}
 
-      <Navbar />
       {/* <ContactInfo /> */}
   
      

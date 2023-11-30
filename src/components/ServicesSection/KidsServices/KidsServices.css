@@ -1,12 +1,14 @@
 .kids-services-container {
   padding: 20px;
   text-align: center;
+
 }
 
 .kids-and-Image {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+  margin-top: 10px;
 }
 
 .kids-services-list {
