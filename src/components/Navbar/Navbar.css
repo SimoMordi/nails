@@ -1,0 +1,48 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    font-size: 30px; 
+    cursor: pointer;
+  }
+  
+ 
+  
+  .nav-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Hide the hamburger menu icon on larger screens */
+  
+  /* Adjust the logo font size for smaller screens if needed */
+  @media (max-width: 400px) {
+    .logo {
+      font-size: 18px;
+    }
+   
+  }
+  .nav-links-mobile {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
